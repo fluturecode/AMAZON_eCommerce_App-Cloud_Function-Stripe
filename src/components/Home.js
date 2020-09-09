@@ -36,8 +36,6 @@ function Home() {
 						image="https://images-na.ssl-images-amazon.com/images/I/71zW4NXBIXL._AC_SL1500_.jpg"
 						rating={5}
 					/>
-				</div>
-				<div className="home__row">
 					<Product
 						title=" Power Theory iPhone X/iPhone Xs Glass Screen Protector [2-Pack] with Easy Install Kit [Premium Tempered Glass] "
 						price={11.85}
