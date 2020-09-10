@@ -9,10 +9,10 @@ function Home() {
 				<div className="home__row">
 					<Product
 						id="49038500"
-						title="Samsung LG49RG90SSUXEN 49' Curved LED Gaming Monitor"
-						price={199.99}
-						rating={3}
-						image="https://www.bhphotovideo.com/images/images2500x2500/samsung_c49hg90dmn_49_curved_va_panel_1345182.jpg"
+						title="ASUS VivoBook 15 Thin and Light Laptop, 15.6” FHD, Intel Core i3-8145U CPU"
+						price={541.0}
+						rating={4}
+						image="https://images-na.ssl-images-amazon.com/images/I/81mZ4eDWYkL._AC_SX679_.jpghttps://www.bhphotovideo.com/images/images2500x2500/samsung_c49hg90dmn_49_curved_va_panel_1345182.jpg"
 					/>
 					<Product
 						id="23445930"
@@ -32,9 +32,9 @@ function Home() {
 				<div className="home__row">
 					<Product
 						id="39025829"
-						title="Maxboost Screen Protector for Apple iPhone Xs & iPhone 0.25mm Tempered Glass"
-						price={11.85}
-						image="https://images-na.ssl-images-amazon.com/images/I/71zW4NXBIXL._AC_SL1500_.jpg"
+						title="Audio-Technica AT-LP120XUSB-BK Direct-Drive Turntable (Analog & USB)"
+						price={249.0}
+						image="https://images-na.ssl-images-amazon.com/images/I/81LDEgi0awL._AC_SX679_.jpg"
 						rating={5}
 					/>
 					<Product
@@ -46,9 +46,9 @@ function Home() {
 					/>
 					<Product
 						id="53634666"
-						title="Kasa Smart Light Switch by TP-Link with Alexa and Google Assistant, UL Certified, 1-Pack (HS200), White"
-						price={29.99}
-						image="https://images-na.ssl-images-amazon.com/images/I/91fAg%2ByOSpL._AC_SL1500_.jpg"
+						title="Edifier R1700BT Bluetooth Bookshelf Speakers - Active Near-Field Studio Monitors - Powered Speakers"
+						price={149.99}
+						image="https://images-na.ssl-images-amazon.com/images/I/71J1U2tVdYL._AC_SL1500_.jpg"
 						rating={4}
 					/>
 					<Product

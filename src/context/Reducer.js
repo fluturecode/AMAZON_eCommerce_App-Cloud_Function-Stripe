@@ -1,20 +1,25 @@
 export const initialState = {
 	basket: [],
+	user: null,
 };
 
-// Use a 'Selector' to add up all item prices
-// together and then returns it together
-
+// Selector
 export const getBasketTotal = (basket) =>
 	basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
+	console.log(action);
 	switch (action.type) {
 		case "ADD_TO_BASKET":
-			//get the previous state and add it to the current state and return
 			return {
 				...state,
 				basket: [...state.basket, action.item],
+			};
+
+		case "EMPTY_BASKET":
+			return {
+				...state,
+				basket: [],
 			};
 
 		case "REMOVE_FROM_BASKET":
@@ -27,13 +32,19 @@ const reducer = (state, action) => {
 				newBasket.splice(index, 1);
 			} else {
 				console.warn(
-					`Can't remove product (id: ${action.id}) because it is not in basket!`
+					`Cant remove product (id: ${action.id}) as its not in basket!`
 				);
 			}
 
 			return {
 				...state,
 				basket: newBasket,
+			};
+
+		case "SET_USER":
+			return {
+				...state,
+				user: action.user,
 			};
 
 		default:
