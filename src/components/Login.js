@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth } from "./firebase";
 
 function Login() {
 	const history = useHistory();
@@ -39,7 +39,6 @@ function Login() {
 				<img
 					className="login__logo"
 					src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-					alt="login logo"
 				/>
 			</Link>
 
@@ -71,8 +70,8 @@ function Login() {
 				</form>
 
 				<p>
-					By signing-in you agree to the AMAZON clone Conditions of Use & Sale.
-					Please see our Privacy Notice, our Cookies Notice and our
+					By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use &
+					Sale. Please see our Privacy Notice, our Cookies Notice and our
 					Interest-Based Ads Notice.
 				</p>
 
