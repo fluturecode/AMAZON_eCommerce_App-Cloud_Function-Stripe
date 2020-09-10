@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { ImageSlider } from "./components/ImageSlider";
+// import { ImageSlider } from "./components/ImageSlider";
+import Login from "./components/Login";
 
 function App() {
 	return (
@@ -13,15 +14,14 @@ function App() {
 				<Header />
 				<Switch>
 					<Route path="/login">
-						<h1>Login Page</h1>
+						<Login />
 					</Route>
-
 					<Route path="/checkout">
 						<Checkout />
 					</Route>
-					<Route path="/imageSlider">
+					{/* <Route path="/imageSlider">
 						<ImageSlider />
-					</Route>
+					</Route> */}
 					<Route path="/">
 						<Home />
 					</Route>
