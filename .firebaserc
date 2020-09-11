@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "clone-275e1"
+    "default": "clone-275e1",
+    "Amazon": "fir-257f9"
   }
 }

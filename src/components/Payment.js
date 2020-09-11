@@ -32,12 +32,10 @@ function Payment() {
 			});
 			setClientSecret(response.data.clientSecret);
 		};
-
 		getClientSecret();
 	}, [basket]);
 
 	const handleSubmit = async (event) => {
-		// do all the fancy stripe stuff...
 		event.preventDefault();
 		setProcessing(true);
 
@@ -49,7 +47,6 @@ function Payment() {
 			})
 			.then(({ paymentIntent }) => {
 				// paymentIntent = payment confirmation
-
 				db.collection("users")
 					.doc(user?.uid)
 					.collection("orders")
@@ -85,7 +82,6 @@ function Payment() {
 				<h1>
 					Checkout (<Link to="/checkout">{basket?.length} items</Link>)
 				</h1>
-
 				{/* Payment section - delivery address */}
 				<div className="payment__section">
 					<div className="payment__title">
@@ -122,8 +118,6 @@ function Payment() {
 						<h3>Payment Method</h3>
 					</div>
 					<div className="payment__details">
-						{/* Stripe magic will go */}
-
 						<form onSubmit={handleSubmit}>
 							<CardElement onChange={handleChange} />
 

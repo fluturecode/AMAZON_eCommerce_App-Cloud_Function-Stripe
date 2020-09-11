@@ -13,7 +13,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
 const promise = loadStripe(
-	"sk_test_51HPvUtB1fbBTGpJWkSVf0ntWMMaim8GhwDX22qTtLfV14ABqRtligdU56ONfNTwrrZin5uyt84tavq2s4DnW5v1n00ExUH768l"
+	"pk_test_51HPvUtB1fbBTGpJWq8NNpKmAmGgUD53rRHhHAdJFNEdg59lIZW4JUNRQX3kpi3ysZjnH4QVl94SR0TXcmA5o88Cc00nJulJm5v"
 );
 
 function App() {
@@ -21,13 +21,9 @@ function App() {
 
 	useEffect(() => {
 		// will only run once when the app component loads...
-
 		auth.onAuthStateChanged((authUser) => {
-			console.log("THE USER IS >>> ", authUser);
-
 			if (authUser) {
 				// the user just logged in / the user was logged in
-
 				dispatch({
 					type: "SET_USER",
 					user: authUser,
