@@ -11,6 +11,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "firebase": "^7.19.1",
     "firebase-tools": "^8.10.0",
     "global": "^4.4.0",
@@ -22,7 +24,8 @@
     "react-dom": "^16.13.1",
     "react-material-ui-carousel": "^1.8.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "stripe": "^8.95.0"
   },
   "scripts": {
     "start": "react-scripts start",
