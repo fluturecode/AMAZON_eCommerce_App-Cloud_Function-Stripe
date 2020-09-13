@@ -5,7 +5,7 @@ import Image from "../images/footer.png";
 function Footer() {
 	return (
 		<div className="footer">
-			<img src={Footer} />
+			<img src={Image} />
 		</div>
 	);
 }

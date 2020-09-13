@@ -1,6 +1,6 @@
 .footer {
-	height: 150px;
+	height: 5vh;
 	width: 100%;
 	object-fit: contain;
-	z-index: 1;
+	position: absolute;
 }
