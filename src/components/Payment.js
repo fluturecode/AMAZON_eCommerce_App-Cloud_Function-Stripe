@@ -35,6 +35,8 @@ function Payment() {
 		getClientSecret();
 	}, [basket]);
 
+	console.log(clientSecret);
+
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		setProcessing(true);
@@ -89,8 +91,8 @@ function Payment() {
 					</div>
 					<div className="payment__address">
 						<p>{user?.email}</p>
-						<p>123 React Lane</p>
-						<p>Los Angeles, CA</p>
+						<p>7635 Elizabeht St.</p>
+						<p>Delray Beach, FL</p>
 					</div>
 				</div>
 
