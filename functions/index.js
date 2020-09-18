@@ -1,34 +1,36 @@
+// Build our Express server
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-// Add stripe secret key from .env
-require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET);
+// Use Stripe "Secret" key
+const stripe = require("stripe")(
+	"sk_test_51HPvUtB1fbBTGpJWkSVf0ntWMMaim8GhwDX22qTtLfV14ABqRtligdU56ONfNTwrrZin5uyt84tavq2s4DnW5v1n00ExUH768l"
+);
 
-// App config
+// App Config
 const app = express();
 
 // Middleware
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-// API routes
-app.get("/", (req, res) => res.status(200).send("Hello"));
-
+// API Routes
+app.get("/", (req, res) => res.status(200).send("Hello World"));
+// Grab the endpoint created in payments.js
 app.post("/payments/create", async (req, res) => {
 	const total = req.query.total;
 
+	console.log("Payment Request Received for this amount >>>", total);
+
 	const paymentIntent = await stripe.paymentIntents.create({
-		amount: total, //subunits of currency
+		amount: total,
 		currency: "usd",
 	});
+
 	res.status(201).send({
 		clientSecret: paymentIntent.client_secret,
 	});
 });
 
-// Listen command
+// Listen Command
 exports.api = functions.https.onRequest(app);
-
-// Example endpoint:
-// http://localhost:5001/fir-c12e4/us-central1/api
