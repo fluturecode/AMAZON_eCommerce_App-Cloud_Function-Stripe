@@ -1,3 +1,6 @@
+### Full-Stack AMAZON clone with User Authentication and Stripe Payment PRocessing
+![Screen Shot 2020-09-18 at 2 19 26 PM](https://user-images.githubusercontent.com/59614789/93631679-00bf6d00-f9ba-11ea-9294-045d52c2e80f.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
