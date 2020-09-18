@@ -1,4 +1,4 @@
-### Full-Stack AMAZON clone with User Authentication and Stripe Payment PRocessing
+### Full-Stack AMAZON clone with User Authentication and Stripe Payment Processing
 ![Screen Shot 2020-09-18 at 2 19 26 PM](https://user-images.githubusercontent.com/59614789/93631679-00bf6d00-f9ba-11ea-9294-045d52c2e80f.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -40,31 +40,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### FIREBASE Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Fronted - Deployed with Firebase
+Backend - Deployed with Firebase Cloud Functions
 
 ### `yarn build` fails to minify
 
