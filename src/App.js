@@ -15,7 +15,7 @@ import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 
 const promise = loadStripe(
-	"pk_live_51HPvUtB1fbBTGpJWMAf2cmBzt9ZZtGqhBWF1Kva7LyIc0v2y4x361nzVMry1utCTALLtnqElOKtT9pBzy4ikWP2H002ZYjZpk6"
+	"pk_test_51HPvUtB1fbBTGpJWq8NNpKmAmGgUD53rRHhHAdJFNEdg59lIZW4JUNRQX3kpi3ysZjnH4QVl94SR0TXcmA5o88Cc00nJulJm5v"
 );
 
 function App() {
