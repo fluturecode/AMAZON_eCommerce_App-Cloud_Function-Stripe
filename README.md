@@ -1,7 +1,7 @@
-### React Web Applicaiton with User Auth and Stripe Payment Processing
+## React Web Applicaiton with User Auth and Stripe Payment Processing
 This is a clone of the Amazon web application, with integrated payment processing through Stripe payments. 
 
-### `yarn start`
+### Run Project
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
