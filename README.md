@@ -1,4 +1,4 @@
-# React Web Applicaiton with User Auth and Stripe Payment Processing
+## React Web Applicaiton with User Auth and Stripe Payment Processing
 This is a clone of the Amazon web application, with integrated payment processing through Stripe payments. 
 
 ### Run Project
